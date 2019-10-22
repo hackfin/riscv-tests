@@ -71,6 +71,8 @@ tests += $$($(1)_tests)
 
 endef
 
+include $(src_dir)/../env/s5/section5.mk
+
 $(eval $(call compile_template,rv32ui,-march=rv32g -mabi=ilp32))
 $(eval $(call compile_template,rv32uc,-march=rv32g -mabi=ilp32))
 $(eval $(call compile_template,rv32um,-march=rv32g -mabi=ilp32))
